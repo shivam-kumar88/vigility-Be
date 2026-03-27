@@ -67,8 +67,8 @@ npm run dev
 * **REST API:** Running on `http://localhost:3000`
 
 ### 5. Stack/architectural choices 
-* **PostgreSQL:**  chooseing PostgreSQL over Mysql because of better to mange with powerful query (NoSQL  will be better for scaling)  
-* **Node.js + Express:** Industry standard and lightwaight and for this senario it's perfect (Alternative- nest.js if the logic will be too complex)
+* **PostgreSQL:**  choosing PostgreSQL over Mysql because of better to mange with powerful query (NoSQL will be better for scaling) 
+* **Node.js + Express:** Industry standard and lightweight and for this scenario it's perfect (Alternative- nest.js if the logic will be too complex)
 * **Prisma:** again instrustry standard and eaasy to setup and use (gives us a extra layer of security )
 
 
