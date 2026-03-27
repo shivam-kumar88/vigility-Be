@@ -18,10 +18,14 @@ app.use('/api/auth', authRoutes);
 app.use('/api', analyticsRoutes);
 
 
-app.get('/health', (req: Request, res: Response) => {
+app.get('/', (req: Request, res: Response) => {
   res.json({ status: 'ok', message: 'TypeScript server is alive and well!' });
 });
 
-app.listen(PORT, () => {
-  console.log(` Server is running on http://localhost:${PORT}`);
-});
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(PORT, () => {
+      console.log(`🚀 Server running locally on http://localhost:${PORT}`);
+    });
+  }
+
+export default app;
