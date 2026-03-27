@@ -22,10 +22,8 @@ app.get('/', (req: Request, res: Response) => {
   res.json({ status: 'ok', message: 'TypeScript server is alive and well!' });
 });
 
-if (process.env.NODE_ENV !== 'production') {
-    app.listen(PORT, () => {
-      console.log(`🚀 Server running locally on http://localhost:${PORT}`);
-    });
-  }
 
-export default app;
+
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(` Server is running on http://localhost:${PORT}`);
+});
