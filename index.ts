@@ -22,7 +22,6 @@ app.get('/health', (req: Request, res: Response) => {
   res.json({ status: 'ok', message: 'TypeScript server is alive and well!' });
 });
 
-// Start Server
 app.listen(PORT, () => {
   console.log(` Server is running on http://localhost:${PORT}`);
 });
