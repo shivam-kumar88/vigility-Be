@@ -71,17 +71,9 @@ npm run dev
 * **Node.js + Express:** Industry standard and lightwaight and for this senario it's perfect (Alternative- nest.js if the logic will be too complex)
 * **Prisma:** again instrustry standard and eaasy to setup and use (gives us a extra layer of security )
 
-```bash
-# generate dummy 50 data in the backend 
-npm run seed
-
-# Start the backend development server
-npm run dev
-```
-* **REST API:** Running on `http://localhost:3000`
 
 
-### 5. Scaling to 1 Million Writes/Minute
+### 6. Scaling to 1 Million Writes/Minute
 
 At 1 million writes per minute (~16,600 requests per second), writing directly to a PostgreSQL database on every /track API call would rapidly exhaust connection pools, cause severe locking contention, and ultimately crash the database.
 
